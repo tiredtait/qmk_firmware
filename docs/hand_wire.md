@@ -196,6 +196,7 @@ $ qmk import-kbfirmware ~/Downloads/gh62.json
 Ψ And build with qmk compile -kb gh62 -km default.
 ```
 
+Some of the keycodes have changed since the previous version, so if there is an error that reads "error: ‘KC_SLCK’ undeclared here" open up the keymap.json file under keyboards/<your keyboard name>/keymaps/default and replace the offending key code with an up to date one from [the new list](https://qmk.github.io/qmk_mkdocs/master/en/keycodes_basic/)
 
 ## Flashing the Firmware
 
